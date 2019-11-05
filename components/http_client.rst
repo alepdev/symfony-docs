@@ -398,9 +398,9 @@ response sequentially instead of waiting for the entire response::
 
     By default, ``text/*``, JSON and XML response bodies are buffered in a local
     ``php://temp`` stream. You can control this behavior by using the ``buffer``
-    option: set it to ``true``/``false`` to enable/disable buffering. Alternatively you can
-    set it to a ``closure`` that should return the same based on the response headers it receives
-    as argument or specify a custom ``resource``
+    option: set it to ``true``/``false`` to enable/disable buffering. or to a ``closure``
+    that should return the same based on the response headers it receives as argument.
+    If you want change default ``php://temp`` stream, you can set buffer to custom ``resource``
 
 .. versionadded:: 4.4
 
